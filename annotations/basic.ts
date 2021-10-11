@@ -31,3 +31,28 @@ class Student {
 const stu = new Student('Soujanya', 'Janapatla', 30, ['OOPS']);
 stu.enroll('React'); // stu.courses => ['OOPS', 'React']
 console.log(stu.courseList());
+
+//Typescript
+
+interface Human {
+    firstName: string;
+    age: number;
+    greet: () => void;
+}
+
+let max : Human= {
+    firstName: 'Soujanya',
+    age: 30,
+    greet(){
+        console.log("Hello!");
+    }
+}
+
+class Instrustor implements Human {
+    firstName: string;
+    age: number;
+    greet(){
+        console.log("Hi!");
+    }
+
+}

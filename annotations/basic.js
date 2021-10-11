@@ -40,3 +40,18 @@ var Student = /** @class */ (function () {
 var stu = new Student('Soujanya', 'Janapatla', 30, ['OOPS']);
 stu.enroll('React'); // stu.courses => ['OOPS', 'React']
 console.log(stu.courseList());
+var max = {
+    firstName: 'Soujanya',
+    age: 30,
+    greet: function () {
+        console.log("Hello!");
+    }
+};
+var Instrustor = /** @class */ (function () {
+    function Instrustor() {
+    }
+    Instrustor.prototype.greet = function () {
+        console.log("Hi!");
+    };
+    return Instrustor;
+}());
